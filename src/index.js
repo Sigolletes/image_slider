@@ -1,6 +1,4 @@
 import style from "./style.css";
+import dropdown from './dropdown';
 
-const arr = [1, 2, 3],
-  codeESNext = () => console.log(...arr);
-
-codeESNext();
+dropdown();
