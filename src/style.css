@@ -68,16 +68,16 @@ header {
 }
 
 .animate.slide { animation-name: animate-slide; }
-@keyframes animate-slide {
-0% {
-opacity: 0;
-transform: translate(-250px,0px);
-}
-100% {
-    opacity: 1;
-    transform: translate(0,0);
-}
-}
+  @keyframes animate-slide {
+    0% {
+      opacity: 0;
+      transform: translate(-250px,0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0,0);
+    }
+  }
 
 #menu a {
   color: var(--color5);
@@ -99,5 +99,48 @@ h1 {
 
 main {
   background-color: var(--color4);
+  display: grid;
+  grid-template-rows: 1fr 50px;
 }
 
+#images {
+  display: grid;
+  grid-template-columns: 70px 1fr 70px;
+  justify-items: center;
+  align-items: center;
+}
+
+#leftArrow {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:30px solid var(--color2); 
+}
+
+#rightArrow {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-left: 30px solid var(--color2);
+}
+
+img {
+  width: 400px;
+}
+
+#circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+#circles div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--color2);
+}
