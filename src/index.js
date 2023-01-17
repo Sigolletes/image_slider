@@ -3,4 +3,8 @@ import dropdown from './dropdown';
 import slider from './slider';
 
 dropdown();
-slider();
+
+slider.changeImage();
+setInterval(() => {
+  slider.changeImage();
+}, 10000);

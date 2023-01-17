@@ -100,7 +100,7 @@ h1 {
 main {
   background-color: var(--color4);
   display: grid;
-  grid-template-rows: 1fr 50px;
+  grid-template-rows: 1fr 80px;
 }
 
 #images {
@@ -126,8 +126,13 @@ main {
   border-left: 30px solid var(--color2);
 }
 
-img {
-  width: 400px;
+#images img {
+  width: 50vw;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid var(--color5);
+  box-shadow: 0 0 30px rgba(166, 186, 136, 0.6);
 }
 
 #circles {
